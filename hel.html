@@ -300,17 +300,45 @@
     <div class="container swiper">
       <div class="slider-wrapper">
         <div class="card-list swiper-wrapper">
-          <div class="card-item swiper-slide" data-bs-target="#SpeakerModal" data-bs-toggle="modal">
+         <div class="card-item swiper-slide" data-bs-target="#SpeakerModal" data-bs-toggle="modal" data-name="James Willson"
+          data-role="Software Developer" data-img="./assets/Images/img-1.jpg" data-desc=" Mr. KEY (Karnika E. Yashwant) is a parallel entrepreneur
+          building and supporting the next billion dollar start-ups.
+          Founder of KEY Difference (Accelerator & VC) and
+          Co-founder of Forward Protocol, he has been in the
+          blockchain space since 2013. He focuses on building
+          fundamentally strong businesses and moving web2 value to
+          web3. He continues to hold many strategic positions, and
+          is a sought after speaker and advisor in the crypto
+          sphere. He is based in Dubai.Lorem ipsum dolor sit amet
+          consectetur, adipisicing elit. Quos facere delectus
+          consectetur iste, quae deleniti vero rerum nemo asperiores
+          at voluptas illum sint laborum temporibus quod officiis
+          reprehenderit iusto explicabo?">
             <img src="./assets/Images/img-1.jpg" alt="" class="user-image" />
             <h2 class="user-name">James Willson</h2>
             <p class="user-proffession">Software Developer</p>
           </div>
-          <div class="card-item swiper-slide">
+          <div class="card-item swiper-slide" data-bs-target="#SpeakerModal" data-bs-toggle="modal" data-name="Sarah Johnson" data-role="Graphic Designer"
+          data-img="./assets/Images/img-2.jpg" data-desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus odit officiis, amet veritatis error provident vero deleniti eaque architecto culpa aspernatur aliquam itaque sit nobis illo iusto consectetur sed soluta!
+    ">
             <img src="./assets/Images/img-2.jpg" alt="" class="user-image" />
             <h2 class="user-name">Sarah Johnson</h2>
             <p class="user-proffession">Graphic Designer</p>
           </div>
-          <div class="card-item swiper-slide">
+          <div class="card-item swiper-slide" data-bs-target="#SpeakerModal" data-bs-toggle="modal" data-name="Michael Brown"data-role="Project Manager" data-img="./assets/Images/img-3.jpg"
+          data-desc="   Mr. KEY (Karnika E. Yashwant) is a parallel entrepreneur
+          building and supporting the next billion dollar start-ups.
+          Founder of KEY Difference (Accelerator & VC) and
+          Co-founder of Forward Protocol, he has been in the
+          blockchain space since 2013. He focuses on building
+          fundamentally strong businesses and moving web2 value to
+          web3. He continues to hold many strategic positions, and
+          is a sought after speaker and advisor in the crypto
+          sphere. He is based in Dubai.Lorem ipsum dolor sit amet
+          consectetur, adipisicing elit. Quos facere delectus
+          consectetur iste, quae deleniti vero rerum nemo asperiores
+          at voluptas illum sint laborum temporibus quod officiis
+          reprehenderit iusto explicabo?">
             <img src="./assets/Images/img-3.jpg" alt="" class="user-image" />
             <h2 class="user-name">Michael Brown</h2>
             <p class="user-proffession">Project Manager</p>
@@ -338,47 +366,32 @@
     </div>
 
     <!-- ==== Speaker Model Section ==== -->
-    <!-- Vertically centered modal -->
-    <!-- Add (SpkrModal-Tag) Class to (modal) If SpkrMdl-tag class needed -->
 
-    <div class="modal fade SpkrModal-Tag" id="SpeakerModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-          <div class="SpkrMdl-content">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            <!-- <p class="SpkrMdl-status">Our Speaker</p> -->
-            <div class="SpkrMdl-detail">
-              <div class="SpkrMdl-img">
-                <img src="./assets/Images/img-1.jpg" id="Spkr-ModalImg" alt="Speaker Image" />
-              </div>
-              <div class="SpkrMdl-info">
-                <h3 id="SpkrMdl-name">James Willson</h3>
-                <p id="SpkrMdl-lead">Software Developer</p>
-                <p id="SpkrMdl-company"></p>
-                <div class="SpkrMdl-desc">
-                  <p id="SpkrMdl-description">
-                    Mr. KEY (Karnika E. Yashwant) is a parallel entrepreneur
-                    building and supporting the next billion dollar start-ups.
-                    Founder of KEY Difference (Accelerator & VC) and
-                    Co-founder of Forward Protocol, he has been in the
-                    blockchain space since 2013. He focuses on building
-                    fundamentally strong businesses and moving web2 value to
-                    web3. He continues to hold many strategic positions, and
-                    is a sought after speaker and advisor in the crypto
-                    sphere. He is based in Dubai.Lorem ipsum dolor sit amet
-                    consectetur, adipisicing elit. Quos facere delectus
-                    consectetur iste, quae deleniti vero rerum nemo asperiores
-                    at voluptas illum sint laborum temporibus quod officiis
-                    reprehenderit iusto explicabo?
-                  </p>
-                </div>
-              </div>
+    <!-- === Dynamic Speaker Modal === -->
+<div class="modal fade SpkrModal-Tag" id="SpeakerModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="SpkrMdl-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="SpkrMdl-detail">
+          <div class="SpkrMdl-img">
+            <img id="Spkr-ModalImg" src="" alt="Speaker Image" />
+          </div>
+          <div class="SpkrMdl-info">
+            <h3 id="SpkrMdl-name"></h3>
+            <p id="SpkrMdl-lead"></p>
+            <p id="SpkrMdl-company"></p>
+            <div class="SpkrMdl-desc">
+              <p id="SpkrMdl-description"></p>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+</div>
+
+   
     <!-- ==== End Speaker Model Section ==== -->
   </section>
 
@@ -776,6 +789,24 @@
     });
 
   </script>
+
+<script>
+  document.querySelectorAll(".card-item").forEach(card => {
+    card.addEventListener("click", () => {
+      const name = card.getAttribute("data-name");
+      const role = card.getAttribute("data-role");
+      const img = card.getAttribute("data-img");
+      const desc = card.getAttribute("data-desc");
+
+      // Populate modal fields
+      document.getElementById("SpkrMdl-name").textContent = name;
+      document.getElementById("SpkrMdl-lead").textContent = role;
+      document.getElementById("Spkr-ModalImg").src = img;
+      document.getElementById("SpkrMdl-description").textContent = desc;
+    });
+  });
+</script>
+
 </body>
 
 </html>
