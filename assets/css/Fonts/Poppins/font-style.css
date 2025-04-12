@@ -1,0 +1,17 @@
+/*** 
+
+====================================================================
+	Fonts
+====================================================================
+
+ ***/
+
+ /* poppins */
+
+ @font-face {
+    font-family: "Poppins";
+    src: url('../Poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}

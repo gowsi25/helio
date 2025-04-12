@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>hel.io</title>
+  <!-- Title icon -->
+  <link href="" rel="icon" />
+  <!-- Bootstrap CSS -->
+  <link href="./assets/css/Bootstrap/bootstrap.min.css" rel="stylesheet" />
+  <link type="text/css" rel="stylesheet" href="./assets/css/Slick/slick.css" />
+  <link type="text/css" rel="stylesheet" href="./assets/css/Slick/slick-theme.css" />
+  <!-- Animation -->
+  <link rel="stylesheet" href="./assets/css/Animate/animate.css" />
+  <!-- CSS -->
+  <link href="./assets/css/hel.css" rel="stylesheet" />
+ 
+  <link href="./assets/css/Fonts/Poppins/font-style.css" rel="stylesheet" />
+  
+
+  <!-- swiper cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css" />
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <div class="header-inner">
+        <a href="#"><img src="./assets/Images/helio-logo.png" class="logo" /></a>
+        <div class="header-menu">
+          <ul class="nav-menu">
+            <!-- <li class="nav-item"><a href="#" class="nav-link">Solutions</a></li> -->
+            <li class="main-menu">
+              <a class="dropdown-toggle" role="button" id="EventDropdown" data-bs-toggle="dropdown"
+                aria-expanded="false">Solution</a>
+              <ul class="dropdown-menu sub-menu" aria-labelledby="EventDropdown">
+                <li>
+                  <a class="dropdown-item Submenu-line" href="#">Agenda</a>
+                </li>
+                <li>
+                  <a class="dropdown-item Submenu-line" href="#">Floor Plan</a>
+                </li>
+                <li>
+                  <a class="dropdown-item Submenu-line" href="#">Event App</a>
+                </li>
+                <li><a class="dropdown-item Submenu-line" href="#">FAQ</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">Resources</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+            <li>
+              <div class="header-icon">
+                <a href="" class="twitter-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="" class="linkedin-icon"><i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </div>
+            </li>
+            <div class="header-btn">
+              <li><a href="" class="app-btn">Lunch App</a></li>
+            </div>
+          </ul>
+        </div>
+
+
+        <!-- Mobile Header -->
+        <div class="Mobile-Header" id="primary-menu">
+
+          <nav class="Mbl-nav">
+            <a class="Mbl-Logo" href="index.html">
+              <img src="./assets/Images/helio-logo.png" alt="MoneyExpo Logo">
+            </a>
+
+            <ul class="Mbl-menu">
+              <li><a class="Menu-Close" href="index.html">Solution</a></li>
+              <li>
+                <a class="Mblmenu-item">Event <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="Mblmenu-collapse" aria-expanded="false">
+                  <li><a class="Menu-Close" href="Agenda.html">Agenda</a></li>
+                  <li><a class="Menu-Close" href="Floorplan.html">Floor Plan</a></li>
+                  <li><a class="Menu-Close" href="Event-App.html">Event App</a></li>
+                  <li><a class="Menu-Close" href="Faq.html">FAQ</a></li>
+                </ul>
+              </li>
+
+
+              <li><a class="Menu-Close" href="Sponsor.html">Resources</a></li>
+              <li><a class="Menu-Close" href="Partner.html">Pricing</a></li>
+
+              <li>
+                <div class="header-icon">
+                  <a href="" class="twitter-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                  <a href="" class="linkedin-icon"><i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                </div>
+              </li>
+              <div class="header-btn">
+                <li><a href="" class="app-btn">Lunch App</a></li>
+              </div>
+            </ul>
+          </nav>
+        </div>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- top-banner -->
+  <section class="top-banner PT-60">
+    <div class="container">
+      <div class="row">
+        <img src="./assets/Images/banner-icon.png" alt="" />
+        <h2>Sell More With Crypto</h2>
+        <p>Boost online sales with seamless crypto checkout solutions</p>
+        <div class="top-logo">
+          <div>
+            <img src="./assets/Images/logo-1.png" class="tp-banner" />
+          </div>
+          <div>
+            <img src="./assets/Images/logo-2.png" class="tp-banner" />
+          </div>
+          <div>
+            <img src="./assets/Images/logo-3.png" class="tp-banner" />
+          </div>
+          <div>
+            <img src="./assets/Images/logo-4.png" class="tp-banner" />
+          </div>
+          <div>
+            <img src="./assets/Images/logo-5.png" class="tp-banner" />
+          </div>
+        </div>
+
+        <div class="header-btn app-btn">
+          <li><a href="">Start Selling</a></li>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- video section -->
+  <section class="video">
+    <video controls autoplay loop muted poster="./assets/Images/vector-img.png">
+      <source src="./assets/Images/helio-video.mp4" type="video/mp4" />
+    </video>
+    <div class="visitor">
+      <div class="visitor-count">
+        <span>6,000+</span>
+        <p>Sellers</p>
+      </div>
+
+      <div class="visitor-count">
+        <span>1M+</span>
+        <p>Users</p>
+      </div>
+      <div class="visitor-count">
+        <span>$1.5B+ </span>
+        <p>Annual Sales</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- marquee section -->
+  <div class="Marquee-Section PT-60">
+    <h2>Trusted by thousands <br />of merchants & apps</h2>
+    <div class="tracker">
+      <div class="Marquee-Inner">
+        <div class="marquee-horizontal"></div>
+
+        <div class="Marquee-Child firstrow">
+          <div class="child">
+            <img src="./assets/Images/marquee-1.png" alt="#CryptoDubai" />
+          </div>
+          <div class="child">
+            <img src="./assets/Images/marquee-2.png" alt="#CryptoDubai" />
+          </div>
+
+          <div class="child">
+            <img src="./assets/Images/marquee-3.png" alt="#CryptoDubai" />
+          </div>
+          <div class="child">
+            <img src="./assets/Images/marquee-4.png" alt="#CryptoDubai" />
+          </div>
+          <div class="child">
+            <img src="./assets/Images/marquee-5.png" alt="#CryptoDubai" />
+          </div>
+          <div class="child">
+            <img src="./assets/Images/marquee-1.png" alt="#CryptoDubai" />
+          </div>
+          <div class="child">
+            <img src="./assets/Images/marquee-2.png" alt="#CryptoDubai" />
+          </div>
+          <div class="child">
+            <img src="./assets/Images/marquee-3.png" alt="#CryptoDubai" />
+          </div>
+
+          <div class="child">
+            <img src="./assets/Images/marquee-1.png" alt="#CryptoDubai" />
+          </div>
+          <div class="child">
+            <img src="./assets/Images/marquee-2.png" alt="#CryptoDubai" />
+          </div>
+
+          <div class="child">
+            <img src="./assets/Images/marquee-3.png" alt="#CryptoDubai" />
+          </div>
+          <div class="child">
+            <img src="./assets/Images/marquee-4.png" alt="#CryptoDubai" />
+          </div>
+          <div class="child">
+            <img src="./assets/Images/marquee-5.png" alt="#CryptoDubai" />
+          </div>
+          <div class="child">
+            <img src="./assets/Images/marquee-1.png" alt="#CryptoDubai" />
+          </div>
+          <div class="child">
+            <img src="./assets/Images/marquee-2.png" alt="#CryptoDubai" />
+          </div>
+          <div class="child">
+            <img src="./assets/Images/marquee-3.png" alt="#CryptoDubai" />
+          </div>
+        </div>
+      </div>
+
+      <div class="Marquee-Inner">
+        <div class="marquee-horizontal"></div>
+        <div class="Marquee-Child secondrow">
+          <div class="child">
+            <img src="./assets/Images/marquee-1.png" alt="#CryptoDubai" />
+          </div>
+          <div class="child">
+            <img src="./assets/Images/marquee-2.png" alt="#CryptoDubai" />
+          </div>
+
+          <div class="child">
+            <img src="./assets/Images/marquee-3.png" alt="#CryptoDubai" />
+          </div>
+          <div class="child">
+            <img src="./assets/Images/marquee-4.png" alt="#CryptoDubai" />
+          </div>
+          <div class="child">
+            <img src="./assets/Images/marquee-5.png" alt="#CryptoDubai" />
+          </div>
+
+          <div class="child">
+            <img src="./assets/Images/marquee-1.png" alt="#CryptoDubai" />
+          </div>
+          <div class="child">
+            <img src="./assets/Images/marquee-2.png" alt="#CryptoDubai" />
+          </div>
+
+          <div class="child">
+            <img src="./assets/Images/marquee-3.png" alt="#CryptoDubai" />
+          </div>
+
+          <div class="child">
+            <img src="./assets/Images/marquee-1.png" alt="#CryptoDubai" />
+          </div>
+          <div class="child">
+            <img src="./assets/Images/marquee-2.png" alt="#CryptoDubai" />
+          </div>
+
+          <div class="child">
+            <img src="./assets/Images/marquee-3.png" alt="#CryptoDubai" />
+          </div>
+          <div class="child">
+            <img src="./assets/Images/marquee-4.png" alt="#CryptoDubai" />
+          </div>
+          <div class="child">
+            <img src="./assets/Images/marquee-5.png" alt="#CryptoDubai" />
+          </div>
+
+          <div class="child">
+            <img src="./assets/Images/marquee-1.png" alt="#CryptoDubai" />
+          </div>
+          <div class="child">
+            <img src="./assets/Images/marquee-2.png" alt="#CryptoDubai" />
+          </div>
+
+          <div class="child">
+            <img src="./assets/Images/marquee-3.png" alt="#CryptoDubai" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- speaker-section -->
+  <section class="speaker PT-60">
+    <div class="container swiper">
+      <div class="slider-wrapper">
+        <div class="card-list swiper-wrapper">
+          <div class="card-item swiper-slide" data-bs-target="#SpeakerModal" data-bs-toggle="modal">
+            <img src="./assets/Images/img-1.jpg" alt="" class="user-image" />
+            <h2 class="user-name">James Willson</h2>
+            <p class="user-proffession">Software Developer</p>
+          </div>
+          <div class="card-item swiper-slide">
+            <img src="./assets/Images/img-2.jpg" alt="" class="user-image" />
+            <h2 class="user-name">Sarah Johnson</h2>
+            <p class="user-proffession">Graphic Designer</p>
+          </div>
+          <div class="card-item swiper-slide">
+            <img src="./assets/Images/img-3.jpg" alt="" class="user-image" />
+            <h2 class="user-name">Michael Brown</h2>
+            <p class="user-proffession">Project Manager</p>
+          </div>
+          <div class="card-item swiper-slide">
+            <img src="./assets/Images/img-4.jpg" alt="" class="user-image" />
+            <h2 class="user-name">Emily Davis</h2>
+            <p class="user-proffession">Marketing Specialist</p>
+          </div>
+          <div class="card-item swiper-slide">
+            <img src="./assets/Images/img-5.jpg" alt="" class="user-image" />
+            <h2 class="user-name">Christopher Garcia</h2>
+            <p class="user-proffession">Data Scientist</p>
+          </div>
+          <div class="card-item swiper-slide">
+            <img src="./assets/Images/img-6.jpg" alt="" class="user-image" />
+            <h2 class="user-name">Richard Wilson</h2>
+            <p class="user-proffession">Product Designer</p>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-btn swiper-button-prev"></div>
+        <div class="swiper-btn swiper-button-next"></div>
+      </div>
+    </div>
+
+    <!-- ==== Speaker Model Section ==== -->
+    <!-- Vertically centered modal -->
+    <!-- Add (SpkrModal-Tag) Class to (modal) If SpkrMdl-tag class needed -->
+
+    <div class="modal fade SpkrModal-Tag" id="SpeakerModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="SpkrMdl-content">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <!-- <p class="SpkrMdl-status">Our Speaker</p> -->
+            <div class="SpkrMdl-detail">
+              <div class="SpkrMdl-img">
+                <img src="./assets/Images/img-1.jpg" id="Spkr-ModalImg" alt="Speaker Image" />
+              </div>
+              <div class="SpkrMdl-info">
+                <h3 id="SpkrMdl-name">James Willson</h3>
+                <p id="SpkrMdl-lead">Software Developer</p>
+                <p id="SpkrMdl-company"></p>
+                <div class="SpkrMdl-desc">
+                  <p id="SpkrMdl-description">
+                    Mr. KEY (Karnika E. Yashwant) is a parallel entrepreneur
+                    building and supporting the next billion dollar start-ups.
+                    Founder of KEY Difference (Accelerator & VC) and
+                    Co-founder of Forward Protocol, he has been in the
+                    blockchain space since 2013. He focuses on building
+                    fundamentally strong businesses and moving web2 value to
+                    web3. He continues to hold many strategic positions, and
+                    is a sought after speaker and advisor in the crypto
+                    sphere. He is based in Dubai.Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Quos facere delectus
+                    consectetur iste, quae deleniti vero rerum nemo asperiores
+                    at voluptas illum sint laborum temporibus quod officiis
+                    reprehenderit iusto explicabo?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ==== End Speaker Model Section ==== -->
+  </section>
+
+  <section class="sponsor PT-60">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <div class="sponsor-line"></div>
+          <h2>Brands That Joined Us</h2>
+          <div class="sponsor-line"></div>
+        </div>
+        <p>Get a preview of the top names joining us in 2025</p>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <div class="Sponsor-Item">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./assets/Images/Multibank-group.jpg" alt="Multibank" />
+                </div>
+                <div class="flip-card-back">
+                  <h1>Multibank</h1>
+                  <p>Booth No: 3</p>
+                  <a href="https://multibankfx.com/en" target="_blank">View Profile</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <div class="Sponsor-Item">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./assets/Images/Nq-naqdi.jpg" alt="Naqdi" />
+                </div>
+                <div class="flip-card-back">
+                  <h1>Naqdi</h1>
+                  <p>Booth No: 2</p>
+                  <a href="https://naqdi.com/" target="_blank">View Profile</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <div class="Sponsor-Item">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./assets/Images/Neex.png" alt="Neex" />
+                </div>
+                <div class="flip-card-back">
+                  <h1>Neex</h1>
+                  <p>Booth No: 5</p>
+                  <a href="https://neex.com/" target="_blank">View Profile</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <div class="Sponsor-Item">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./assets/Images/TradingPro.webp" alt="TradingPro" />
+                </div>
+                <div class="flip-card-back">
+                  <h1>TradingPro</h1>
+                  <p>Booth No: 4</p>
+                  <a href="https://www.tradingpro.com/" target="_blank">View Profile</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <div class="Sponsor-Item">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./assets/Images/Multibank-group.jpg" alt="Multibank" />
+                </div>
+                <div class="flip-card-back">
+                  <h1>Multibank</h1>
+                  <p>Booth No: 3</p>
+                  <a href="https://multibankfx.com/en" target="_blank">View Profile</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <div class="Sponsor-Item">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./assets/Images/Nq-naqdi.jpg" alt="Naqdi" />
+                </div>
+                <div class="flip-card-back">
+                  <h1>Naqdi</h1>
+                  <p>Booth No: 2</p>
+                  <a href="https://naqdi.com/" target="_blank">View Profile</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <div class="Sponsor-Item">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./assets/Images/Nq-naqdi.jpg" alt="Naqdi" />
+                </div>
+                <div class="flip-card-back">
+                  <h1>Naqdi</h1>
+                  <p>Booth No: 2</p>
+                  <a href="https://naqdi.com/" target="_blank">View Profile</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <div class="Sponsor-Item">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./assets/Images/Multibank-group.jpg" alt="Multibank" />
+                </div>
+                <div class="flip-card-back">
+                  <h1>Multibank</h1>
+                  <p>Booth No: 3</p>
+                  <a href="https://multibankfx.com/en" target="_blank">View Profile</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <div class="Sponsor-Item">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./assets/Images/TradingPro.webp" alt="TradingPro" />
+                </div>
+                <div class="flip-card-back">
+                  <h1>TradingPro</h1>
+                  <p>Booth No: 4</p>
+                  <a href="https://www.tradingpro.com/" target="_blank">View Profile</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <div class="Sponsor-Item">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./assets/Images/Neex.png" alt="Neex" />
+                </div>
+                <div class="flip-card-back">
+                  <h1>Neex</h1>
+                  <p>Booth No: 5</p>
+                  <a href="https://neex.com/" target="_blank">View Profile</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <div class="Sponsor-Item">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./assets/Images/Neex.png" alt="Neex" />
+                </div>
+                <div class="flip-card-back">
+                  <h1>Neex</h1>
+                  <p>Booth No: 5</p>
+                  <a href="https://neex.com/" target="_blank">View Profile</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <div class="Sponsor-Item">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./assets/Images/TradingPro.webp" alt="TradingPro" />
+                </div>
+                <div class="flip-card-back">
+                  <h1>TradingPro</h1>
+                  <p>Booth No: 4</p>
+                  <a href="https://www.tradingpro.com/" target="_blank">View Profile</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sponsor-btn">
+          <a href="">View Sponsor</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="forex-section">
+    <div class="container">
+      <div class="forex-count">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="forex-para">
+              <h5>Ready to Exhibit
+              </h5>
+              <span>Your brand</span>
+              <span>Your Stage</span>
+              <span>Your Opportunity</span>
+              <div class="fd-para">For the first time ever, Money Expo is coming to Chile! This is your chance to
+                position your brand at
+                the center of Latin America’s thriving finance and fintech scene. Meet decision-makers, showcase your
+                solutions and tap into a market full of opportunities.
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="stats">
+              <div class="stat-box">
+                <div class="stat-number count">21000+</div>
+                <div class="stat-text">Attendees</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-number count">9000+</div>
+                <div class="stat-text">Business Visitors</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-number count">200+</div>
+                <div class="stat-text">Exhibitors</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-number count">130+</div>
+                <div class="stat-text">Speakers</div>
+              </div>
+              <div class="stat-box last-box">
+                <div class="stat-number count">50+</div>
+                <div class="stat-text">Countries</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-12">
+          <div class="footer-logo">
+            <img src="assets/Images/banner-icon.png">
+            <h2>Sell More With Crypto
+            </h2>
+            <ul>
+              <li>Contact us</li>
+              <li>Blog</li>
+              <li>Media kit</li>
+              <li>FAQ</li>
+              <li>Join us</li>
+            </ul>
+            <div class="header-icon">
+              <a href="" class="twitter-icon twitt"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="" class="linkedin-icon"><i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="" class="facebook-icon"><i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="" class="whatsapp-icon"><i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+            <div class="footer-bottom">
+              <p>© 2025 Helio Fintech Ltd · All rights reserved · Contact us at: <a href="">hi@hel.io</a> <a href="">Privacy</a> <a href="">Terms</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-12">
+          <div class="form">
+            <h5>Join our mailing list for latest updates
+            </h5>
+            <input type="email" name="" id="" class="form-control" placeholder="Email address">
+            <div class="app-btn srb-btn">subscribe</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <!-- Script -->
+  <script src="./assets/js/hel.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="./assets/js/Bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/Jquery/jquery-3.7.1.min.js"></script>
+  <script src="./assets/js/Slick/slick.min.js"></script>
+  <script src="./assets/js/Wow/wow.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/fontawesome.min.js"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+
+  <!------------------------------------
+        Animation
+     -------------------------------------->
+  <script>
+    new WOW().init();
+  </script>
+
+  <script>
+    // swiper slider
+    const swiper = new Swiper(".slider-wrapper", {
+      // Optional parameters
+      direction: "horizontal",
+      loop: true,
+      grabCursor: true,
+      spaceBetween: 30,
+
+      // If we need pagination
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      // And if we need scrollbar
+      // scrollbar: {
+      //     el: '.swiper-scrollbar',
+      // },
+
+      // Responsive breakpoints
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      },
+    });
+  </script>
+  <script>
+    $('.count').each(function () {
+      // Remove the '+' symbol and convert to number
+      var target = parseInt($(this).text().replace(/\+/g, ''));
+
+      $(this).prop('Counter', 0).animate({
+        Counter: target
+      }, {
+        duration: 3000,
+        easing: 'swing',
+        step: function (now) {
+          // Add the '+' symbol back if it existed in original text
+          var text = Math.ceil(now);
+          if ($(this).text().indexOf('+') !== -1) {
+            text = text + '+';
+          }
+          $(this).text(text);
+        }
+      });
+    });
+
+  </script>
+</body>
+
+</html>

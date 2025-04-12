@@ -1,0 +1,576 @@
+/*** 
+
+====================================================================
+   Reset
+====================================================================
+
+ ***/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*** 
+  
+  ====================================================================
+     Global Settings
+  ====================================================================
+  
+   ***/
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --font-Poppins: "Poppins", sans-serif;
+}
+
+/*--------------------------------------------------------------
+     Section Divider Margin
+  --------------------------------------------------------------*/
+.MT-100 {
+    margin: 100px 0px;
+}
+
+.PT-100 {
+    padding: 100px 0px;
+}
+
+.MT-60 {
+    margin: 60px 0px;
+}
+
+.PT-60 {
+    padding: 60px 0px 0px;
+}
+
+.MT-70 {
+    margin: 70px 0px;
+}
+
+.PT-70 {
+    padding: 70px 0px 0px;
+}
+
+@media screen and (max-width: 768px) {
+    .MT-100 {
+        margin: 60px 0px;
+    }
+
+    .PT-100 {
+        padding: 60px 0px;
+    }
+
+    .MT-70 {
+        margin: 60px 0px;
+    }
+
+    .PT-70 {
+        padding: 60px 0px;
+    }
+}
+
+/*--------------------------------------------------------------
+     Typography
+  --------------------------------------------------------------*/
+
+body {
+    width: 100%;
+
+    overflow-x: hidden;
+    font-family: var(--font-Poppins);
+}
+
+.modal-open {
+    overflow-y: auto !important;
+    padding-right: 0px !important;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+    p {
+        font-size: 16px;
+    }
+}
+
+/* forex-video-section */
+.forex-video-section {
+    background: #22D05D;
+    padding: 100px 0px 220px;
+
+}
+
+.forex-temp {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+}
+
+.forex-temp .forex-recap {
+    width: 35%;
+    padding-top: 150px;
+}
+
+.forex-recap h2 {
+    font-family: Nebulica;
+    font-size: 110px;
+    font-weight: 300;
+    line-height: 110px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.forex-video-section .recap-btn {
+    background: #421A1D;
+    padding: 8px 0px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+
+
+}
+
+.forex-video-section .recap-btn a {
+    color: #22D05D;
+    text-transform: uppercase;
+    font-size: 24px;
+
+}
+
+
+.forex-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.video-testi-1,
+.video-testi-2,
+.video-testi-3 {
+
+    width: 250px;
+    height: 350px;
+    padding: 30px 10px;
+    transform: rotate(-10deg);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-testi-1 video,
+.video-testi-2 video,
+.video-testi-3 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+
+}
+
+.video-testi-2 video {
+    margin-top: 35px !important;
+}
+
+.video-testi-3 video {
+    margin-top: -125px !important;
+}
+
+.video-btn {
+    width: 150px;
+    height: 50px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 55px;
+    z-index: 999999;
+
+}
+
+.video-testi-2-btn {
+    position: absolute;
+    bottom: 40px !important;
+}
+
+.video-testi-3-btn {
+    position: absolute;
+    bottom: 120px;
+}
+
+.video-btn a {
+    color: #22D05D;
+    text-transform: uppercase;
+    font-size: 19px;
+}
+
+/* perfect-section */
+.perfect-section {
+    background: #FFEEDD;
+    position: relative;
+    display: block;
+    padding-bottom: 200px;
+}
+
+
+.perfect-section .perfect-temp {
+    background: #000;
+    color: #8C8C8C;
+    width: 80%;
+    padding: 40px 40px 40px;
+    height: 300px;
+    font-family: Neue Montreal;
+    font-weight: 300;
+    font-size: 45px;
+    line-height: 54px;
+    letter-spacing: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 25px;
+    /* position: absolute;
+    top: -160px;
+    right: 10%; */
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* forex-trailer */
+.forex-trailer {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.forex-trailer video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.forex-trailer .forex-trend {
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 500px;
+    border-radius: 25px;
+    border: 2px solid #22D05D;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.forex-trailer .forex-trend h2 {
+    color: #fff;
+    font-family: Neue Montreal;
+    font-weight: 400;
+    font-size: 80px;
+    text-align: center;
+    line-height: 85px;
+    text-transform: uppercase;
+}
+
+.forex-trailer-btn {
+    background: #22D05D;
+    padding: 10px 0px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+
+.forex-trailer-btn a {
+    font-family: Neue Montreal;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+/* forex-section */
+.forex-section {
+    background: #000;
+    padding: 75px 0px;
+    color: #fff;
+}
+
+.forex-para {
+
+    padding: 10px 29px;
+    height: 447px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.forex-para h5 {
+    font-size: 58px;
+
+}
+
+.forex-count {
+    display: flex;
+    padding: 35px;
+    background: #22D05D;
+    border-radius: 25px;
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.stat-box {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 20px;
+    width: 45%;
+
+}
+
+.stat-number {
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.stat-text {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+
+/*--------------------------------------------------------------
+   Page Common Width Settings
+--------------------------------------------------------------*/
+
+@media (min-width: 480px) {
+    .container {
+        max-width: 480px;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 576px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 992px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+/* media query */
+@media screen and (max-width: 1200px) {
+
+    /* forex-video-section */
+    .forex-temp .forex-recap {
+        width: 100%;
+        padding-top: 0px;
+        padding-bottom: 25px;
+    }
+
+    .forex-temp {
+        justify-content: center;
+    }
+
+    /* perfect-section */
+    .perfect-section .perfect-temp {
+        font-size: 35px;
+        line-height: 44px;
+    }
+
+    /* forex-trailer */
+    .forex-trailer .forex-trend {
+        width: 90%;
+        height: 400px;
+    }
+
+    .forex-trailer .forex-trend h2 {
+        font-size: 60px;
+        line-height: 65px;
+    }
+}
+
+@media screen and (max-width: 1100px) {}
+
+@media screen and (max-width: 992px) {
+
+    /* forex-video-section */
+    .forex-recap h2 {
+        font-size: 100px;
+    }
+
+    .video-testi-1,
+    .video-testi-2,
+    .video-testi-3 {
+        width: 240px;
+    }
+
+    /* perfect-section */
+    .perfect-section .perfect-temp {
+        font-size: 30px;
+        line-height: 38px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* forex-video-section */
+    .forex-video-section {
+        padding: 60px 0px 155px;
+        overflow: hidden;
+    }
+
+    .forex-temp .forex-recap {
+        padding-top: 0px;
+    }
+
+    .forex-recap h2 {
+        font-size: 80px;
+        line-height: 85px;
+    }
+
+
+    .forex-video-section .recap-btn {
+        width: 200px;
+    }
+
+    .forex-video-section .recap-btn a {
+        font-size: 22px;
+    }
+
+    .video-testi-1,
+    .video-testi-2,
+    .video-testi-3 {
+        width: 184px;
+    }
+
+    /* perfect-section */
+    .perfect-section {
+        padding-bottom: 180px;
+    }
+
+    .perfect-section .perfect-temp {
+        font-size: 25px;
+        line-height: 35px;
+
+        height: auto;
+    }
+
+    /* forex-trailer */
+    .forex-trailer .forex-trend {
+        width: 95%;
+        height: 350px;
+    }
+
+    .forex-trailer .forex-trend h2 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .forex-trailer-btn {
+        width: 250px;
+        padding: 8px 0;
+    }
+
+    .forex-trailer-btn a {
+        font-size: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 576px) {
+
+    /* forex-video-section */
+    .video-testi-1,
+    .video-testi-2,
+    .video-testi-3 {
+        width: 250px;
+    }
+
+    .video-testi-2 video,
+    .video-testi-3 video {
+        margin-top: 0px !important;
+    }
+
+    .video-testi-2-btn,
+    .video-testi-3-btn {
+        bottom: 55px !important;
+    }
+
+    /* perfect-section */
+    .perfect-section {
+        padding-bottom: 240px;
+    }
+
+    .forex-video-section {
+        padding: 60px 0px 230px;
+    }
+
+    .perfect-section .perfect-temp {
+        font-size: 20px;
+        line-height: 28px;
+
+    }
+
+    /* forex-trailer */
+
+
+
+}

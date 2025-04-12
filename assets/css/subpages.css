@@ -1,0 +1,41 @@
+.footer {
+    padding-top: 50px !important;
+}
+
+.sub-banner {
+    padding-top: 220px;
+    padding-bottom: 130px;
+    position: relative;
+    z-index: 5;
+    min-height: 250px;
+    background: url(../../assets/Images/orange.png) no-repeat top center / cover;
+    color: #fff;
+}
+
+.sub-banner::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(5, 3, 17);
+    opacity: 0.65;
+    z-index: -1;
+}
+
+.subpagebnr {
+    text-align: center;
+}
+
+.subpage-cnt h2 {
+    font-size: 46px;
+
+}
+
+.subpage-mnu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
